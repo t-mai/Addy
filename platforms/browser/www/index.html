@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
+  />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script>
+			$(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide", start: function(slider) {
+            $('body').removeClass('loading');
+          }
+        });
+      });
+		</script>
+  <title>Product Detail</title>
+</head>
+
+<body>
+  <br>
+  <div>
+    <h2> Product detail</h2>
+    <br>
+    <h3> New balance sneakers
+  </div>
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="img/nb1.jpg" />
+      </li>
+      <li>
+        <img src="img/nb4.jpg" />
+      </li>
+      <li>
+        <img src="img/nb5.jpg" />
+      </li>
+      <li>
+        <img src="img/nb6.jpg" />
+      </li>
+      <li>
+        <img src="img/nb7.jpg" />
+      </li>
+    </ul>
+  </div>
+   
+  <table style="width:80%">
+    <tr>
+      <th> <h4> Size: 23.5 </h4> </th>
+      <th> <h4> Price: JPY 6,292 </h4> </th>
+    </tr>
+  </table>
+
+  <table style="width:100%">
+  <tr>
+    <th>
+      <button class="button--large" onclick="showMessage()" id="tryBtn">Try it</button>
+    </th>
+    <th>
+      <a class="button--large" href="order.html">Order it</a>
+    </th>
+  </tr>
+  </table>
+  
+</body>
+</html>

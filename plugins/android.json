@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "addy.co.jp"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "addyappp",
+            "ANDROID_SCHEME": " ",
+            "ANDROID_HOST": " ",
+            "ANDROID_PATHPREFIX": "/",
+            "PACKAGE_NAME": "addy.co.jp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "addy.co.jp"
+        }
+    },
+    "dependent_plugins": {}
+}
